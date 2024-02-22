@@ -2070,10 +2070,7 @@ reply(shorti)
 }
 break
 //======== AREA DOWNLOAD =====//
-case 'play': 
-case 'ytaudio':
-case 'playmusik':
-case 'playmusic': {
+case 'play': {
 if (!isGroup) return onlyGroup()
 if (!isPremium && global.db.data.users[sender].limit < 1) return onlyLimit()
 if (!q) return reply("Kirim perintah judul lagu/link youtube nya bwang")
